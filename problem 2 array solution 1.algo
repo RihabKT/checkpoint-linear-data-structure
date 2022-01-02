@@ -1,0 +1,28 @@
+ALGORITHM SUMOVERLAPPING
+VAR
+   arr1:  ARRAY_OF INTEGER[];
+   arr2: ARRAY_OF INTEGER [];
+   newarr: ARRAY_OF INTEGER [];
+   i,j,k: INTEGER;
+   sum: INTEGER :=0;
+   occur: BOOLEAN := true;
+
+BEGIN
+arr1 := {2, 13, 6, 10};
+arr2 := {13, 10, 16, 15};
+  FOR i FROM 0 TO arr1.length DO
+   FOR j FROM 0 TO arr2.length DO
+    IF (arr1[i]= arr2[j]) THEN
+     occur := true;
+     newarr.push (newarr[k]);
+     write (newarr[k]);
+     ELSE 
+     occur := false;
+     END_IF;
+  END_FOR;
+ END_FOR;
+ WHILE (occur := true) DO
+     sum := sum + (newarr[k] *2);
+ END_WHILE;
+ write (sum);
+END

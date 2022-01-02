@@ -1,0 +1,28 @@
+ALGORITHM SUMDISTINCT
+VAR
+   arr1:  ARRAY_OF INTEGER[];
+   arr2: ARRAY_OF INTEGER [];
+   newarr: ARRAY_OF INTEGER [];
+   i,j,k: INTEGER;
+   sum: INTEGER :=0;
+   occur: BOOLEAN := false;
+
+BEGIN
+arr1 := {3, 1, 7, 9};
+arr2 := {2, 4, 1, 9, 3};
+  FOR i FROM 0 TO arr1.length DO
+   FOR j FROM 0 TO arr2.length DO
+    IF (arr1[i]= arr2[j]) THEN
+     occur := true;
+     ELSE 
+     occur := false;
+     newarr.push (newarr[k]);
+     write (newarr[k]);
+     END_IF;
+  END_FOR;
+ END_FOR;
+ WHILE (occur := false) DO
+     sum := sum + newarr[k];
+ END_WHILE;
+ write (sum);
+END

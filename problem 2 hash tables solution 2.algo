@@ -1,0 +1,24 @@
+ALGORITHM SUMDISTINCT
+VAR
+   htab : HASH_TABLE<INTEGER>;
+  arr: ARRAY_OF INTEGER [];
+  newarr: ARRAY_OF INTEGER [];
+   i,k,count : INTEGER;
+   sum: INTEGER := 0;
+  
+  
+   FOR i FROM 0 TO arr.length  DO
+  
+       IF (htab.lookup(htb[i]) = TRUE) THEN
+           count := htab.get(arr[i]);
+           htab.insert(arr[i],count+1);
+            newarr.push(newarr[k]);
+           Write (newarr[k]);
+       ELSE
+           htab.insert(arr[i],1);
+       END_IF
+   END_FOR
+
+ sum := sum + (newarr[k] *2);
+   Write(sum);
+END
